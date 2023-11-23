@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let currentNarration = null; // Reference to the current narration audio
 
     function updatePages() {
-        document.getElementById('pageImage').style.backgroundImage = `url('images/${currentPage}.png')`;
+        document.getElementById('pageImage').style.backgroundImage = `url('images/${currentPage}.jpg')`;
 
         var text = currentPage < pagesText.length ? pagesText[currentPage] : ''
         document.getElementById('pageText').innerText = text;
