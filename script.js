@@ -4,8 +4,8 @@ let pagesText = [];
 let currentNarration = null; // Reference to the current narration audio
 
 function updatePages() {
-    document.getElementById('leftPage').style.backgroundImage = `url('images/${currentPage}.png')`;
-    document.getElementById('rightPage').style.backgroundImage = `url('images/${currentPage + 1}.png')`;
+    document.getElementById('leftPageImage').style.backgroundImage = `url('images/page${currentPage}.jpg')`;
+    document.getElementById('rightPageImage').style.backgroundImage = `url('images/page${currentPage + 1}.jpg')`;
     updateText();
 }
 
