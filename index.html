@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>My Virtual Book</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="book">
-        <div id="leftPage" class="page">
-            <div id="leftPageImage" class="page-image"></div>
-            <div id="leftPageText" class="page-text"></div>
-        </div>
-        <div id="rightPage" class="page">
-            <div id="rightPageImage" class="page-image"></div>
-            <div id="rightPageText" class="page-text"></div>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <div id="textColumn" class="col-md-6 d-flex align-items-center justify-content-center page">
+                <div id="pageText" class="page-text"></div>
+            </div>
+            <div id="imageColumn" class="col-md-6 p-0 d-flex align-items-center">
+                <div id="pageImage" class="page-image w-100 h-100"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
