@@ -1,34 +1,46 @@
-body, html {
-    background-color: #121213; /* Dark grey background */
+/* Additional CSS to style the webpage */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #121213; /* Set background color for the body */
 }
 
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Vertically centers the content */
-    align-items: center; /* Horizontally centers the content */
-    height: 100%; /* Take up full height of the parent */
-    width: 100%; /* Take up full width of the parent */
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%; /* Full width */
+    max-width: 100%; /* Ensure container is not wider than 100% */
 }
 
-.page-text {
-    text-align: justify;
-    width: 90%; /* Adjust as needed */
-    padding-left: 100px;
-    color: #000; /* Text color */
-    font-size: 16px; /* Text size */
-    font-family: Arial, sans-serif; /* Sets a default font */
-    max-width: 100%; /* Ensures the text doesn't exceed the container width */
-    color: #c4c2ce; /* Light grey text */
+.row {
+    margin: 0; /* Remove margin for the row */
 }
 
-#imageColumn {
-    padding: 0 !important; /* Removes padding */
-    overflow: hidden; /* Prevents overflow */
+/* Remove the padding from the image column */
+.no-padding {
+    padding: 0 !important;
 }
 
-.page-image {
-    background-size: contain; /* Ensures the entire image is visible */
-    background-repeat: no-repeat;
-    background-position: center center;
+.text-content {
+    padding: 0px; /* Add padding inside the text content box */
+    color: #c4c2ce;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+/* Vertical centering for the text-content on larger screens */
+@media (min-width: 768px) {
+    .align-items-center {
+        align-items: center;
+    }
+    .text-content {
+        padding: 100px; /* Add padding inside the text content box */
+    }
 }
